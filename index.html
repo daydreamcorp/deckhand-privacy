@@ -124,11 +124,6 @@
     color: var(--ink-faint); font-weight: 700; background: var(--surface-sunk);
   }
   td:first-child { font-family: var(--mono); font-size: .85rem; white-space: nowrap; color: var(--ink); }
-  .status-inert {
-    display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase;
-    letter-spacing: .07em; color: var(--ink-faint); border: 1px solid var(--rule);
-    border-radius: 3px; padding: .05rem .4rem; margin-left: .4rem;
-  }
 
   .not-collected {
     margin: 0 0 .95rem; padding: 0; list-style: none;
@@ -165,7 +160,7 @@
     <p class="eyebrow">Deckhand</p>
     <h1>Privacy Policy</h1>
     <div class="updated">
-      <span><b>Last updated</b> 2026-08-13</span>
+      <span><b>Last updated</b> 2026-08-21</span>
       <span><b>Applies to</b> com.daydreamcorp.deckhand</span>
     </div>
     <div class="draft-flag">
@@ -173,10 +168,7 @@
       describes verified, current app behavior — cross-checked against the
       Android manifest, the billing and geolocation source, and the pairing
       security audit rather than carried forward unchecked from an earlier
-      draft — but a lawyer should review this before it's relied on. Also
-      note: <code class="inline">LICENSE</code> currently names an
-      individual (LeSplooch), not Day Dream Corp — worth reconciling if Day
-      Dream Corp isn't a registered entity yet.
+      draft — but a lawyer should review this before it's relied on.
     </div>
   </header>
 
@@ -256,7 +248,6 @@
             <tr><td>Local network</td><td>Discover and pair with your desktop host app</td><td>Required for the app to do anything</td></tr>
             <tr><td>Camera</td><td>Scan the QR code the host app shows during pairing. The feed is never recorded or stored.</td><td>Only for that moment</td></tr>
             <tr><td>Location<br>(foreground)</td><td>Geofenced auto-profiles, while the deck screen is open</td><td>Only if you create a geofence</td></tr>
-            <tr><td>Location<br>(background)</td><td>Declared for a future background-monitoring version of geofencing.<span class="status-inert">not used today</span> The current build only checks location while the deck screen is visible.</td><td>Requested, presently inert</td></tr>
             <tr><td>Microphone</td><td>Voice-activated buttons</td><td>Only if you configure a voice trigger</td></tr>
             <tr><td>Motion sensor</td><td>Shake-to-trigger buttons</td><td>Always available — no permission prompt on either platform</td></tr>
           </tbody>
